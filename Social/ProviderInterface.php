@@ -2,7 +2,7 @@
 
 namespace Social;
 
-interface FeedInterface {
+interface ProviderInterface {
 
 	/**
 	 * Get a social feed

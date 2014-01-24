@@ -4,7 +4,7 @@ namespace Social;
 
 use Guzzle\Client as GuzzleClient;
 
-abstract class AbstractFeed implements FeedInterface
+abstract class AbstractProvider implements ProviderInterface
 {
 	protected $required = [];
 	protected $name;
@@ -54,7 +54,7 @@ abstract class AbstractFeed implements FeedInterface
 		return array_map([$this, 'setFeedType'], $responses);
 	}
 
-	protected function setFeedType(array $response)
+	protected function setProviderType(array $response)
 	{
 		$response['provider'] = $this->getName();
 

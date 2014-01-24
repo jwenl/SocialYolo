@@ -1,9 +1,9 @@
 <?php
-namespace Social\Feeds;
+namespace Social\Providers;
 
-use Social\AbstractFeed as AbstractFeed;
+use Social\AbstractProvider as AbstractProvider;
 
-class Twitter extends AbstractFeed
+class Twitter extends AbstractProvider
 {
 	protected $required = ['consumerKey', 'consumerSecret', 'accessToken', 'accessTokenSecret'];
 

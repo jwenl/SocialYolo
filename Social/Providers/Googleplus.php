@@ -1,9 +1,9 @@
 <?php
-namespace Social\Feeds;
+namespace Social\Providers;
 
-use Social\AbstractFeed as AbstractFeed;
+use Social\AbstractProvider as AbstractProvider;
 
-class Googleplus extends AbstractFeed
+class Googleplus extends AbstractProvider
 {
 	protected $required = ['user_id', 'apiKey'];
 
